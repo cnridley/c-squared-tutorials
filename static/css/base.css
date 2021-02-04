@@ -1,3 +1,13 @@
 body {
     font-family: 'Press Start 2P', cursive;
 }
+
+.base-header {
+    margin: auto;
+    justify-content: center;
+}
+
+.base-span {
+    margin-top: 65px;
+    margin-left: 10px;
+}
