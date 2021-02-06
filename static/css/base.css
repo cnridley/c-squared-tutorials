@@ -2,6 +2,19 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
+hr {
+    width: 75%;
+    height: 3px;
+    background-color: black;
+}
+
+a {
+    color: black;
+}
+a:hover{
+    color: black;
+}
+
 .base-header {
     margin: auto;
     justify-content: center;
@@ -10,4 +23,21 @@ body {
 .base-span {
     margin-top: 65px;
     margin-left: 10px;
+}
+
+.AnchorRow {
+    justify-content: center;
+}
+
+.TutorialImg {
+    margin-bottom: 25px;
+}
+
+.Git {
+  font-size: 30px;
+}
+
+.IndexFooter {
+    justify-content: center;
+    margin-bottom: 8px;
 }

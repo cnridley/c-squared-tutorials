@@ -30,14 +30,16 @@
     <title>C-Squared{% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-      {% block header %}
-      {% endblock %}
+
 <div class="row container-fluid base-header">
-     <img src="../media/Chloe.png" width="200" heigh="200">
+     <a href="{% url 'home' %}"><img src="../media/Chloe.png" width="200" heigh="200"></a>
         <p class="base-span">TUTORIALS</p>
 </div>
-   
 
+<hr>
+   
+      {% block header %}
+      {% endblock %}
     
   {% block content %}
   {% endblock %}

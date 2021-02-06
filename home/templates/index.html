@@ -3,52 +3,93 @@
  {% block header %}
 
  {% endblock %}
-{% block content %}
+ 
+ {% block content %}
 
 <br>
-<br>
-<div class="row container-fluid">
-    <div class="col-md-2">
-        <img src="../../media/html.png" width="150" height="150">
+
+<div class="row container-fluid AnchorRow">
+    <a href="{% url 'htmlpage' %}">
+    <div class="col-md-3 col-sm-12">
+        <img src="../../media/html.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/CSS.png" width="150" height="150">
+    </a>
+    <a href="#">
+    <div class="col-md-3 col-sm-12">
+        <img src="../../media/CSS.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/python.png" width="150" height="150">
+    </a>
+    <a href="#">
+    <div class="col-md-3 col-sm-12">
+        <img src="../../media/python.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/JS.png" width="150" height="150">
+    </a>
+    <a href="#">
+    <div class="col-md-3 col-sm-12">
+        <img src="../../media/Chloe.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/DOM.png" width="150" height="150">
-    </div>
-    <div class="col-md-2">
-        <img src="../../media/GIT.png" width="150" height="150">
-    </div>
+    </a>
 </div>
-<br>
+    <br>
+
+<div class="row container-fluid AnchorRow">
+    <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/GIT.png" width="150" height="150" class="TutorialImg">
+    </div>
+    </a>
+    <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/DOM.png" width="150" height="150" class="TutorialImg">
+    </div>
+    </a>
+    <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/JS.png" width="150" height="150" class="TutorialImg">
+    </div>
+    </a>
+    <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/JSON.png" width="150" height="150" class="TutorialImg">
+    </div>
+    </a>
+</div>
 <br>
 
-<div class="row container-fluid">
-    <div class="col-md-2">
-        <img src="../../media/bootstrap.png" width="150" height="150">
+<div class="row container-fluid AnchorRow">
+    <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/bootstrap.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/API.png" width="150" height="150">
+    </a>
+    <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/API.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/DJANGO.png" width="150" height="150">
+    </a>
+    <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/DJANGO.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/JQUERY.png" width="150" height="150">
+    </a>
+       <a href="#">
+    <div class="col-md-4 col-sm-12">
+        <img src="../../media/JQUERY.png" width="150" height="150" class="TutorialImg">
     </div>
-    <div class="col-md-2">
-        <img src="../../media/JSON.png" width="150" height="150">
-    </div>
-    <div class="col-md-2">
-        <img src="../../media/Chloe.png" width="150" height="150">
-    </div>
+    </a>
 </div>
+    <br>
+
+<hr>
+<br>
+<div class="row container-fluid IndexFooter">
+    Written and developed by Chloe Ridley 
+</div>   
+<div class="row container-fluid IndexFooter">
+    <a href="https://github.com/cnridley" target="_blank"><i class="fab fa-github Git"></i></a>
+</div> 
+<br>
+
+
 
 {% endblock %}
