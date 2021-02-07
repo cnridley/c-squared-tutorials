@@ -3,13 +3,52 @@
 {% load static %}
 
 {% block header %}
-<div>HTML Header</div>
+<div class="row container-fluid HeaderRow">
+HTML
+</div>
 
-
+<hr>
 {% endblock %}
 
 {% block content %}
 
-<div>hello</div>
+<div class="row container-fluid">
+    <p>HTML stands for Hyper Text Markup Language.
+        <br><br>
+        HTML is the structure of the web.
+        Every website is made up of HTML pages, 
+        which is made up of elements and attributes 
+        that can be manipulated and changed to the developers design.
+    </p>
+</div>
+
+<div class="row container-fluid">
+    <p>Basic Structure of the HTML page:<br><br>
+
+!DOCTYPE html<br>
+Every HTML document has to start with this declaration so that the browser knows that it is an HTML doc.
+<br>
+<br>
+< html >
+
+< head > 
+<br>
+The head tags contain all the information that the user cannot see i.e. links to external styling pages.
+<br>
+< /head >
+<br>
+
+< body >
+<br>
+
+The body tags contain all the information that the user can see.
+<br>
+
+< /body >
+<br>
+
+< /html >
+</p>
+</div>
 
 {% endblock %}

@@ -1,3 +1,5 @@
+/* -- ALL OF SITE -- */
+
 body {
     font-family: 'Press Start 2P', cursive;
 }
@@ -15,6 +17,16 @@ a:hover{
     color: black;
 }
 
+.HeaderRow {
+    justify-content: center;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+/* -- base.html -- */
 .base-header {
     margin: auto;
     justify-content: center;
@@ -25,6 +37,8 @@ a:hover{
     margin-left: 10px;
 }
 
+
+/* -- index.html -- */
 .AnchorRow {
     justify-content: center;
 }
@@ -41,3 +55,5 @@ a:hover{
     justify-content: center;
     margin-bottom: 8px;
 }
+
+/* -- htmlpage.html -- */
