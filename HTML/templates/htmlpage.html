@@ -22,11 +22,63 @@ HTML
     </p>
 </div>
 
-<div class="row container-fluid">
-    <p>Basic Structure of the HTML Page:</p>
+<p style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">Basic Structure of the HTML Page:</p>
+
+<img src="../../media/Every HTML document has to start with this declaration so that the browser knows that it is an HTML doc..png"
+class="htmlImg">
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">Classes and IDs:</p>
+<p>
+Classes and IDs are attributes that go within the elements of an HTML page and give them a unique 'name'. They can then be called by the css pages or JS pages to be styled however the web designer wants them to be.
+<br>
+<br>
+Multiple elements can have the same class name.
+In the style sheet it is called using the dot notation i.e .ClassName
+In the JavaScript style sheet it is called using the document.getElementsByClassNames("ClassName");
+<br>
+<br>
+Only one element can have an ID name, making them more unique
+In the CSS styling sheet is it called using the pound notation i.e. #IDName
+In the Javascript style sheet it is called using the document.getElementByID("IDName");
+</p>
+<br>
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Useful elements and attributes:</p>
+<p>
+There are two different types of elements; semantic or non-semantic.
+<br>
+Non-semantic elements tell the user nothing about its contents. e.g. div and span.
+<br>
+Div elements are block level elements and are used expansively to help layout the website because they can be styled so extensively. i.e. width, height, background color and so on can be added to its style.
+<br>
+Span elements are inline elements that are used to isolate a particular content within another element, so that it can be styled seperately.
+<br>
+Semantic elements have a meaning and tell the user information about its contents:
+<br>
+<br>
+< a > - creates a hyperlink to other pages, files, locations within the same page, emails etc.
+<br>
+< ul > - unordered list.
+<br>
+< ol > - ordered list.
+<br>
+< li > - list item. Child of ul or ol
+<br>
+< img > - image tag. An empty element, it has no closing tag. Has to include the src attribute. Recommended to include the alt attribute.
+</p>
+<br>
+
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">Some useful attributes are:</p>
+<p>href = #name - the section with the id = “name”. href attributes go inside the anchor tags!
     <br>
-    <img src="../../media/Every HTML document has to start with this declaration so that the browser knows that it is an HTML doc..png"
-    width="500" height="500">
-</div>
+href = URL - a new webpage. href attributes go inside the anchor tags!
+<br>
+Target = _blank - to open the links in a new browser. Goes inside anchor tag.
+<br>
+src=”image pathway” - tells the browser where to find the image. Goes inside the img tag.
+<br>
+Alt=”descriptive text for image” - used in case the image link is broken.</p>
+<br>
 
 {% endblock %}

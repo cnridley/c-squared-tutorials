@@ -25,6 +25,7 @@ a:hover{
 p {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
+    justify-content: center;
 }
 
 /* -- base.html -- */
@@ -58,3 +59,16 @@ p {
 }
 
 /* -- htmlpage.html -- */
+
+.htmlImg {
+    width: 700px;
+    height: 450px;
+    margin: auto;
+    display: block;
+}
+
+#f4816f - salmon
+
+khaki - #fbe55b
+
+#f7a74a - orange 
