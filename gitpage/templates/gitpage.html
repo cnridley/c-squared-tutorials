@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block header %}
+<div class="row container-fluid HeaderRow">
+GIT
+</div>
+
+<hr>
+{% endblock %}
+
+{% block content %}
+
+<p>
+Git is a distribution version control system that makes collaborative software projects more manageable.
+Most projects will have a git repository which makes sharing and contributing to code simple and effective.
+The repository (repo) is the main folder of a project, it contains all relevant project files and stores the revision history for each file.
+</p>
+
+<p>
+<span style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">Forking a repository:</span><br>
+
+On GitHub on the main page of the repo you will see a 'fork' button on the top right hand page, click this to fork.
+Once forked open up the terminal window to, and clone the repo to your text editor by using:<br>
+
+git clone URL OF FORKED REPO<br>
+</p>
+
+<p>
+<span style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">Creating a new branch:</span><br>
+
+
+The default branch for any project is the 'master branch' - anything on the master branch is deployable for others to use at anytime.<br>
+When creating a new branch it is important to create your branch off the master branch.<br>
+The branch name should also be descriptive.<br>
+To create new branch open the terminal and put in the follow demands:<br>
+
+git branch 'new-branch-name' - creates new branch<br>
+
+git checkout 'new-branch-name' - switches to new branch<br>
+
+git checkout -b 'new-branch-name- - combines the two above commands to create and switch to new branch at the same time<br>
+
+git checkout master - switch back to master branch.<br>
+</p>
+
+<p>
+<span style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Creating a new repository:</span><br>
+
+Below are the step by step commands that need to be inputed into the terminal to create and add work to repositories (on the master branch):<br>
+1. git init - To initialize the repository.<br>
+2. git status - To see what needs to be staged in the repository.<br>
+3. git add . - To add all the files to the staging section.<br>
+4 git commit -m "commit message" - Commits all the files in the staging section to the repository. The message should be descriptive so that othe developers know what has been done.<br>
+5. git remote add origin 'URL of repo' - Adds the URL of where the repository will be stored.<br>
+6. git push -u origin master - Pushes all of the pages to a git branch i.e. GitHub.<br>
+</p>
+
+{% endblock %}

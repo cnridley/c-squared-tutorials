@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('HTML/', include('HTML.urls')),
     path('csspage/', include('csspage.urls')),
+    path('gitpage/', include('gitpage.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
