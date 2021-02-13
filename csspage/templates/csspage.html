@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block header %}
+<div class="row container-fluid HeaderRow">
+CSS
+</div>
+
+<hr>
+{% endblock %}
+
+{% block content %}
+
+<div class="row container-fluid">
+    <p>CSS stands for Cascading Style Sheets.
+        <br>
+        <br>
+It defines how elements are displayed on a page. 
+CSS is stored in an external file, usually called "style.css".
+In order for it to work, it has to be linked on all HTML pages using the link tag with an href to the file. 
+The link tag goes in the head element so that the user cannot see it.
+    </p>
+</div>
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">The Box Model:</p>
+
+<img src="../../media/box_model.png" class="boxImg">
+
+<p style="text-decoration: underline; text-transform: uppercase;">All HTML elements can be essentially viewed as a box.</p><br>
+<p>
+The Box Model consists of four different levels:<br>
+
+<span style="text-decoration: underline; text-transform: uppercase;">Content</span>  - What is viewed by the user. I.e. Images or text.<br>
+
+<span style="text-decoration: underline; text-transform: uppercase;">Padding </span>- Clears an area around the content and border. Imagine the padding in a coat when styling this.<br>
+
+<span style="text-decoration: underline; text-transform: uppercase;">Border</span> - This can be seen by the user, it is styled in the CSS file.<br>
+
+<span style="text-decoration: underline; text-transform: uppercase;">The margin</span> - The space outside the box, which is inbetween each element.<br><br>
+
+Box sizing:<br>
+Controls whether the padding and border should be included in the overall size of the element.<br>
+
+Box-size: border-box; tells browser to include padding and border in overall size of element.<br>
+
+Content-box; default value. Keeps padding and border out of total size of element.<br>
+</p>
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">THE DISPLAY PROPERTY:</p>
+
+<p>The display property is the most important CSS styling rule to control the layout of the website.<br><br>
+Each element has a default display which is either:<br>
+<span style="text-decoration: underline; text-transform: uppercase;">Block</span> - takes up the full width available. e.g. Div, footers, p tags, sections.<br>
+<span style="text-decoration: underline; text-transform: uppercase;">Inline</span> - takes up only the amount of space that is needed and does not start a new line. e.g. Span.<br><br>
+
+Other display properties you can use are:<br>
+<span style="text-decoration: underline; text-transform: uppercase;">'Flex'</span> - Displays an element as a block-level flex container.<br>
+<span style="text-decoration: underline; text-transform: uppercase;">'inline-block'</span> - Displays an element as an inline-level block container. 
+The element itself is formatted as an inline element, but you can apply height and width values.<br>
+<span style="text-decoration: underline; text-transform: uppercase;">'inline-flex'</span> - Displays an element as an inline-level flex container.<br>
+<span style="text-decoration: underline; text-transform: uppercase;">'none'</span> - Removes element completely. This is useful for javascript functions.<br>
+</p>
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Other Useful CSS:</p>
+<p>
+<span style="text-decoration: underline; text-transform: uppercase;">Order of css rules is:</span><br>
+!important<br>
+ID selector (#)<br>
+Class selector (.)<br>
+Type selector<br>
+Css is read from top to bottom by the browser.<br>
+</p>
+
+<p>
+<span style="text-decoration: underline; text-transform: uppercase;">Units of measurements:</span><br>
+Pixels<br>
+Em<br>
+Rem<br>
+Percentage<br>
+Vw (viewport width) eg. Height: 10vw; box will have height of 10% of window.<br>
+Vh (viewport height) - relative to height of viewport which is the browser viewport size.<br>
+</p>
+
+<p>
+<span style="text-decoration: underline; text-transform: uppercase;">Centering:</span><br>
+Places content centered horizontally or vertically on a page.<br>
+To centre horizontally - set value to auto for left and right margin.<br>
+
+<span style="text-decoration: underline; text-transform: uppercase;">To centre inline-block elements</span> 
+- add text align property to the parent of the inline block.<br>
+
+<span style="text-decoration: underline; text-transform: uppercase;">For absolute positioned elements </span> -
+ set the left and right property as well as the auto property for margin-left and margin-right.<br>
+
+<span style="text-decoration: underline; text-transform: uppercase;">For vertical centering</span> -
+ transform:translate(y)(-50%); - will move the element on the y-axis.<br>
+</p>
+
+<p>
+<span style="text-decoration: underline; text-transform: uppercase;">The transition property:</span><br>
+The transition property allows you to trigger a style change to an element.<br>
+The most popular one is :hover.<br>
+This sets a style to the element when the user hovers over the particular element.<br>
+<br>
+</p>
+{% endblock %}
