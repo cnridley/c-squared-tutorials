@@ -3,5 +3,6 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('', views.jspage, name='jspage')
+    path('', views.jspage, name='jspage'),
+    path('jspage/', views.jsbasics, name='jsbasics')
 ]
