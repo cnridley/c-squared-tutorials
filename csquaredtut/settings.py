@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'HTML',
     'csspage',
     'gitpage',
+    'jspage',
 ]
 
 MIDDLEWARE = [
