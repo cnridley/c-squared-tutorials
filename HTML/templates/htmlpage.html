@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% load static %}
-
+{% block image %}<a href="{% url 'home' %}"><img src="../media/Chloe.png" width="200" heigh="200"></a>{% endblock %}
 {% block header %}
 <div class="row container-fluid HeaderRow">
     HTML
@@ -43,7 +43,7 @@
     In the Javascript style sheet it is called using the document.getElementByID("IDName");
 </p>
 <br>
-
+<hr>
 <p style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Useful elements and attributes:</p>
 <p>
     There are two different types of elements; semantic or non-semantic.
@@ -72,7 +72,7 @@
 </p>
 <br>
 
-
+<hr>
 <p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">Some useful attributes are:</p>
 <p>href = #name - the section with the id = “name”. href attributes go inside the anchor tags!
     <br>

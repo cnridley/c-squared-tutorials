@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% load static %}
-
+{% block image %}<a href="{% url 'home' %}"><img src="../media/Chloe.png" width="200" heigh="200"></a>{% endblock %}
 {% block header %}
 <div class="row container-fluid HeaderRow">
     CSS
@@ -51,7 +51,7 @@
 
     Content-box; default value. Keeps padding and border out of total size of element.<br>
 </p>
-
+<hr>
 <p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">THE DISPLAY PROPERTY:</p>
 
 <p>The display property is the most important CSS styling rule to control the layout of the website.<br><br>
@@ -72,7 +72,7 @@
     <span style="text-decoration: underline; text-transform: uppercase;">'none'</span> - Removes element completely.
     This is useful for javascript functions.<br>
 </p>
-
+<hr>
 <p style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Other Useful CSS:</p>
 <p>
     <span style="text-decoration: underline; text-transform: uppercase;">Order of css rules is:</span><br>
@@ -82,7 +82,7 @@
     Type selector<br>
     Css is read from top to bottom by the browser.<br>
 </p>
-
+<hr>
 <p>
     <span style="text-decoration: underline; text-transform: uppercase;">Units of measurements:</span><br>
     Pixels<br>
@@ -92,7 +92,7 @@
     Vw (viewport width) eg. Height: 10vw; box will have height of 10% of window.<br>
     Vh (viewport height) - relative to height of viewport which is the browser viewport size.<br>
 </p>
-
+<hr>
 <p>
     <span style="text-decoration: underline; text-transform: uppercase;">Centering:</span><br>
     Places content centered horizontally or vertically on a page.<br>
@@ -107,7 +107,7 @@
     <span style="text-decoration: underline; text-transform: uppercase;">For vertical centering</span> -
     transform:translate(y)(-50%); - will move the element on the y-axis.<br>
 </p>
-
+<hr>
 <p>
     <span style="text-decoration: underline; text-transform: uppercase;">The transition property:</span><br>
     The transition property allows you to trigger a style change to an element.<br>
