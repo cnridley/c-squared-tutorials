@@ -6,6 +6,12 @@ def jspage(request):
 
     return render(request, 'jspage.html')
 
+
 def jsbasics(request):
 
     return render(request, 'jsbasics.html')
+
+
+def stringmethods(request):
+
+    return render(request, 'stringmethods.html')
