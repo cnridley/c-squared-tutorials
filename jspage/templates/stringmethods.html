@@ -10,6 +10,124 @@
 {% endblock %}
 
 {% block content %}
-stringsssssssss
+<p>
+ Strings are a collection of characters, numbers and symbols. Strings are how we display text and data, making it one of the most fundamental concepts in JavaScript to understand. <br>
+    There are three ways of creating a string:<br>
+    1. With single quotations i.e <pre>'I am a string'</pre>
+    2. With double quotations i.e <pre>"I am also a string"</pre>
+    3. Using template literals or backticks i.e <pre>`You guessed it, I am a string too!`</pre><br>
+    It does not matter which technique you use, as long as it matched at the beginning and end, otherwise errors can occur<br>
+    e.g. var string = 'The developer said 'Make sure you use the correct syntax' to the intern.' <br>
+    console.log(string) => 'The developer said' <br>
+    This is because JS has ended the string after the second '. To correct this put the quote in double quotations or use template literals.<br>
+    Each has its advantages and disadvantages which we will go into in more depth further down.<br><br>
+    Strings can be stored in variables to be called later on in the code, like the above example.
+</p>
 
+<hr>
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">String Concatenation:</p>
+
+        <p>This is the joining of two or more strings using the + symbol. <br>
+        e.g.<br>
+        <pre>
+            var book = "Harry Potter"
+            var author = "J K Rowling"
+
+            var FaveBook = "My favourite book is " + book + " by" + author.
+
+            console.log(FaveBook);
+            My favourite book is Harry Potter by J K Rowling.
+        </pre>
+        </p>
+<hr>
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">Template literals:</p>
+        <p>Template literals are a relatively new concept to JavaScript. It is simply constructing a string with backticks ``, instead of quotations. <br>
+        The advantages of this include:<br>
+        It reduces risk of error by using the incorrect quotations throughout the string.<br>
+        It provides a multi line support, so \n is not needed. Which reduces the amount of code that needs to be written and makes it look cleaner. e.g.
+        <pre>
+        var TemplateString = `This string
+                                will print out on multiple
+                                lines because we used
+                                a template literal`
+        </pre>
+        Another benefit of template literal is string interpolation. This is a way of joining strings together usng ${}. This is quicker, easier and looks cleaner than string concatenation. e.g.
+        <pre>
+        var book = "Harry Potter"
+        var author = "J K Rowling"
+
+        var FaveBook = `My favourite book is ${book} by ${author}`
+
+            console.log(FaveBook);
+            My favourite book is Harry Potter by J K Rowling.
+        </pre>
+        We have used the same example as above and as you can see it is a lot easier to read.
+    </p>
+<hr>
+    <p style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Methods</p>
+            Different methods can be used to find information out about a string or manipulate a string in a particular way.<br>
+    NB. Javascript starts counting from 0, so in this string, "hello" h would be index 0.
+            <br><br>
+            <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">METHOD</th>
+      <th scope="col">WHAT IT DOES</th>
+    <th scope="col">EXAMPLE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">.toLowerCase</th>
+      <td>Converts all the characters in a string to lower case</td>
+        <td>var example = "I AM A UPPER CASE STRING"<br>
+        var example1 = example.toLowerCase(); -> "i am a upper case string</td>
+    </tr>
+    <tr>
+      <th scope="row">.toUpperCase</th>
+      <td>Converts all the characters in a string to upper case</td>
+      <td>var text = "hello world"<br>
+        var text1 = text.toUpperCase -> "HELLO WORLD"</td>
+    </tr>
+    <tr>
+      <th scope="row">.trim</th>
+      <td>Removes white space from either side.</td>
+      <td>var whiteS = "         so much room             ";<br>
+        var noWhiteS = whiteS.trim(); -> "so much room"</td>
+    </tr>
+    <tr>
+      <th scope="row">.indexOf()</th>
+      <td>Finds the index of the first occurence of the string in brackets</td>
+      <td>var find = "Please locate the first locate word"<br>
+        var pos = find.indexOf("locate"); -> 7.
+        </td>
+    </tr>
+    <tr>
+      <th scope="row">.slice(start, end);</th>
+      <td>slices out the start number to end number [end] not included.</td>
+      <td>var fruit = "banana apple pear"<br>
+        var sliceFruit = fruit.slice(0, 6); -> "banana"</td>
+    </tr>
+    <tr>
+      <th scope="row"> .substr(start, [length])</th>
+      <td>Prints out from start number for the length that it stated.</td>
+      <td>var hello = "hello world"
+        var helloEx = hello.substr(2, 3); -> llo</td>
+    </tr>
+    <tr>
+      <th scope="row"> .repeat(x);</th>
+      <td>Repeats the string for by the number of times stated in brackets.</td>
+      <td>var hello = "hello world"
+        var helloEx = hello.repeat(3); -> "hello world hello world hello world"</td>
+    </tr>
+      <tr>
+      <th scope="row"> .length</th>
+      <td>Returns the length of the string.</td>
+      <td>var hello = "hello"
+        var helloEx = hello.length(); -> 5</td>
+    </tr>
+  </tbody>
+</table>
 {% endblock %}
