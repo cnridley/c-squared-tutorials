@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block image %}<a href="{% url 'jspage' %}"><img src="../../media/Chloe.png" width="200" heigh="200"></a>{% endblock %}
+{% block header %}
+<div class="row container-fluid HeaderRow">
+    MATH METHODS
+</div>
+<hr>
+{% endblock %}
+
+{% block content %}
+<p>
+    Javascript has only one type of number. Numbers can be written with or without decimals. Numbers are not written with any quotations, otherwise it would be a string. <br>
+    <pre>
+    var x = 57;
+    x.typeOf(); -> number.
+
+    var y = "567"
+    y.typeOf(); -> string.
+    </pre>
+
+    Some things that you should note regarding JS numbers are:<br>
+    NaN - a JS reserved keyword indicating the result is 'Not a Number'<br>
+    E.g. var x = 500/"word" will return NaN. <br><br>
+    If you divide by 0, JS will always return 'infinity'. The data type of infinity is number.
+</p>
+<hr>
+<p style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">Number Methods.</p>
+Javascript has different methods that can be used on numbers. Some are listed below <br><br>
+
+<b>parseInt()</b> parses a string and returns an integer.<br><br>
+
+<b>parseFloat() </b>takes a string and returns a floating-point number.<br><br>
+
+<b>toString()</b> converts a number to a string<br>
+ e.g.<br>
+var myNum = 85;<br>
+myNum.toString(); // '85'<br><br>
+
+
+<b>toFixed(2)</b> converts a number to a string, but keeping only two decimals.<br><br>
+
+<b>isFinite(number)</b> checks if the value in parenthesis is an actual number. <br><br>
+
+<b>isInteger(number)</b> checks if the value in parenthesis is an integer. <br><br>
+
+<b>isNaN(number)</b> checks if the value in parenthesis is NaN.<br><br>
+
+<hr>
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">Math Methods.</p>
+Javascript has different math methods that can be used on numbers. Some are listed below <br><br>
+
+
+<b>math.floor</b> rounds down the number. 2.1 will be 2.<br><br>
+<b>math.ceil</b> rounds up the number. 1.1 will be 2.<br><br>
+<b>math.round</b> rounds to the nearest integer. It means 1.4 will be 1, but 1.6 will be 2.<br><br>
+<b>math.trunc</b> removes the decimal part of the number. 4.5 will be 4.<br><br>
+<b>math.sqrt</b> returns the square root of the number.<br><br>
+<b>math.cbrt</b> returns the cube root of the number.<br><br>
+<b>math.random</b> returns a random number between 0 (inclusive) and 1 (exclusive).<br><br><br>
+
+
+
+
+{% endblock %}

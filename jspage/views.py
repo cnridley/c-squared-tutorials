@@ -15,3 +15,12 @@ def jsbasics(request):
 def stringmethods(request):
 
     return render(request, 'stringmethods.html')
+
+def mathmethods(request):
+
+    return render(request, 'mathmethods.html')
+
+
+def js_arrays(request):
+
+    return render(request, 'js_arrays.html')
