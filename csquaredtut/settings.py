@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'csspage',
     'gitpage',
     'jspage',
+    'djangopage',
 ]
 
 MIDDLEWARE = [

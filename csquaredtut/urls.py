@@ -25,4 +25,5 @@ urlpatterns = [
     path('csspage/', include('csspage.urls')),
     path('gitpage/', include('gitpage.urls')),
     path('jspage/', include('jspage.urls')),
+    path('djangopage/', include('djangopage.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
