@@ -8,3 +8,14 @@
 </div>
 <hr>
 {% endblock %}
+
+{% block content %}
+{% for P in Pdf %}
+<p>
+<a href="../../media/{{P.fileUpload }}" target="_blank">{{ P.title }}</a>
+
+</p>
+{% endfor %}
+
+{% endblock %}
+
