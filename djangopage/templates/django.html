@@ -6,15 +6,68 @@
 <div class="row container-fluid HeaderRow">
     DJANGO
 </div>
+<p><i>'The Web Framework for perfectionists with deadlines'</i></p>
 <hr>
 {% endblock %}
 
 {% block content %}
+<p>The following sections will explain what each file in Django is used for and also includes a follow along tutorial for
+    building a simple Django Website.
+</p>
+<br>
+<div class="row container-fluid AnchorRow">
+    <a href="">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/setting up.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+    <a href="">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/forms.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+    <a href="#">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/views.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+    <a href="#">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/models.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+</div>
+<br>
+<div class="row container-fluid AnchorRow">
+    <a href="">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/urls.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+    <a href="">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/migrations.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+    <a href="#">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/testing.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+    <a href="#">
+        <div class="col-md-3 col-sm-12">
+            <img src="../../media/follow.png" width="150" height="150" class="TutorialImg">
+        </div>
+    </a>
+</div>
+<br>
+
+
 {% for P in Pdf %}
-<p>
+
 <a href="../../media/{{P.fileUpload }}" target="_blank">{{ P.title }}</a>
 
-</p>
+
 {% endfor %}
 
 {% endblock %}
