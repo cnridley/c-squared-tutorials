@@ -14,3 +14,6 @@ def djangopage(request):
 
     return render(request, 'django.html', context)
 
+def setting_up(request):
+
+    return render(request, 'setting_up.html')
