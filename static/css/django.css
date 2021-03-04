@@ -1,0 +1,21 @@
+.step4 {
+    width: 70%;
+    height: 300px;
+}
+
+/*-- For medium or smaller screens --*/
+@media only screen and (max-width: 768px) {
+    .Step1 {
+        width: 75%;
+    }
+
+    .Step3 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .step4 {
+        height: 200px;
+        width: 500px;
+    }
+}

@@ -9,4 +9,70 @@
 <hr>
 {% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/django.css' %}">
+{% endblock %}
+
 {% block content %}
+
+<p style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">Installing Django</p>
+<p>pip 'pip install packages' is used to install Django. Pip is widely accepted as the industry-standard tool for installing
+    python packages.
+</p>
+<hr>
+<p> <u>Step 1</u> <br>
+    In the terminal use 'pip3 install django' - the 3 is used, so that it is installed for python version 3.<br>
+    If you ever need to check what version of python you are using use 'python --version' in the terminal. 
+</p>
+<img src="../../media/step-1.png" class="Step1">
+<hr>
+<p>
+    <u>Step 2</u><br>
+    After installing Django. Use the django-admin function to start a new django project. <br>
+    For this example it will be called all_recipes.
+</p>
+<img src="../../media/step-2.png" class="Step1">
+<br>
+<p>
+    The dot at the end will tell django we want to create a project in the current directory.
+</p>
+<p>
+    Once the new project has been installed, two new items will appear in the file explorer.<br>
+    The first one is the project name folder i.e all_recipes, which is the project directory.<br>
+    The second one is manage.py - this is django management utility, which we will need throughout the project. 
+</p>
+<img src="../../media/step-3.png" class="Step3">
+<br>
+<br>
+<p><u>__init__.py</u> - This tells our project this is a file we can import from.</p>
+<p><u>settings.py</u> - Contains global settings for entire django project. I.e. Where our HTML templates are located
+and which database we're going to connect to</p>
+<p><u>urls.py</u> - Containes routing information that allows users to type a specific URL into their address bar.</p>
+<p><u>wsgi.py</u> - Contains code that allows our web server to communicate with our Python application.</p>
+<br>
+<p><u>To run the django app:</u></p>
+<p>
+    After following the first two steps, your Django app will be connected. <br>
+    To run the app use, <b>python3 manage.py runserver</b>. If all is working correctly the following webpage will show. 
+</p>
+<img src="../../media/step-4.png" class="step4">
+<hr>
+<p><u>Step 3 - initial migration</u></p>
+<p>
+When you first start a new django project, you have run 'python3 manage.py migrate'. 
+Migrations apply changes to the model to the database.
+To learn more about migrations, go to the migrations section.
+</p>
+<img src="../../media/step-5.png" class="Step1">
+<hr>
+<p><u>Step 4 - Create a superuser</u></p>
+<p>
+In order to log in to the admin a 'superuser' needs to be created.<br>
+Run python3 manage.py createsuperuser in the terminal, it will then prompt you for a username, email and password,
+these will be your log in credentials.<br>
+Having a superuser allows backend access to CRUD functionality - which is helpful in development and testing.
+</p>
+<img src="../../media/step-6.png" class="Step1">
+<br>
+<br>
+{% endblock %}
