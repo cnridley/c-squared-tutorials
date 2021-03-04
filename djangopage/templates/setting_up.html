@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% load static %}
-{% block image %}<a href="{% url 'djangopage' %}"><img src="../../media/Chloe.png" width="200" heigh="200"></a>{% endblock %}
+{% block image %}<a href="{% url 'djangopage' %}"><img src="../../media/Chloe.png" width="200"
+        heigh="200"></a>{% endblock %}
 {% block header %}
 <div class="row container-fluid HeaderRow">
     DJANGO - Setting Up
@@ -16,13 +17,14 @@
 {% block content %}
 
 <p style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">Installing Django</p>
-<p>pip 'pip install packages' is used to install Django. Pip is widely accepted as the industry-standard tool for installing
+<p>pip 'pip install packages' is used to install Django. Pip is widely accepted as the industry-standard tool for
+    installing
     python packages.
 </p>
 <hr>
 <p> <u>Step 1</u> <br>
     In the terminal use 'pip3 install django' - the 3 is used so that it is installed for python version 3.<br>
-    If you ever need to check what version of python you are using use 'python --version' in the terminal. 
+    If you ever need to check what version of python you are using use 'python --version' in the terminal.
 </p>
 <img src="../../media/step-1.png" class="Step1">
 <hr>
@@ -39,38 +41,38 @@
 <p>
     Once the new project has been installed, two new items will appear in the file explorer.<br>
     The first one is the project name folder i.e all_recipes, which is the project directory.<br>
-    The second one is manage.py - this is django management utility, which we will need throughout the project. 
+    The second one is manage.py - this is django management utility, which we will need throughout the project.
 </p>
 <img src="../../media/step-3.png" class="Step3">
 <br>
 <br>
 <p><u>__init__.py</u> - This tells our project this is a file we can import from.</p>
 <p><u>settings.py</u> - Contains global settings for entire django project. I.e. Where our HTML templates are located
-and which database we're going to connect to</p>
+    and which database we're going to connect to</p>
 <p><u>urls.py</u> - Containes routing information that allows users to type a specific URL into their address bar.</p>
 <p><u>wsgi.py</u> - Contains code that allows our web server to communicate with our Python application.</p>
 <br>
 <p><u>To run the django app:</u></p>
 <p>
     After following the first two steps, your Django app will be connected. <br>
-    To run the app use, <b>python3 manage.py runserver</b>. If all is working correctly the following webpage will show. 
+    To run the app use, <b>python3 manage.py runserver</b>. If all is working correctly the following webpage will show.
 </p>
 <img src="../../media/step-4.png" class="step4">
 <hr>
 <p><u>Step 3 - initial migration</u></p>
 <p>
-When you first start a new django project, you have run 'python3 manage.py migrate'. 
-Migrations apply changes to the model to the database.
-To learn more about migrations, go to the migrations section.
+    When you first start a new django project, you have run 'python3 manage.py migrate'.
+    Migrations apply changes to the model to the database.
+    To learn more about migrations, go to the migrations section.
 </p>
 <img src="../../media/step-5.png" class="Step1">
 <hr>
 <p><u>Step 4 - Create a superuser</u></p>
 <p>
-In order to log in to the admin a 'superuser' needs to be created.<br>
-Run python3 manage.py createsuperuser in the terminal, it will then prompt you for a username, email and password,
-these will be your log in credentials.<br>
-Having a superuser allows backend access to CRUD functionality - which is helpful in development and testing.
+    In order to log in to the admin a 'superuser' needs to be created.<br>
+    Run python3 manage.py createsuperuser in the terminal, it will then prompt you for a username, email and password,
+    these will be your log in credentials.<br>
+    Having a superuser allows backend access to CRUD functionality - which is helpful in development and testing.
 </p>
 <img src="../../media/step-6.png" class="Step1">
 <br>
@@ -84,19 +86,19 @@ Having a superuser allows backend access to CRUD functionality - which is helpfu
     Django blocks used in the base.html will be inherited by any templates that extends from it.<br>
     To extend from the base.html the top of the page must include the following:
 </p>
-    <img src="../../media/base.png" class="Step1">
+<img src="../../media/base.png" class="Step1">
 <br>
 <hr>
 <p style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Setting Up Static Files</p>
 <p>
     Static files include CSS, JS and images. When using Django, you have to set you static files in a certain way. <br>
     1. Make a static folder, within that folder make a css folder with a file named base.css <br>
-    2. In settings.py add the following to the bottom on the page, this tells Django where to look for static files 
+    2. In settings.py add the following to the bottom on the page, this tells Django where to look for static files
     that are not in a particular app.
 </p>
 <img src="../../media/static.png" class="step4"><br>
 <p>
-    3. Add the link tag to the CSS in the base.html. 
+    3. Add the link tag to the CSS in the base.html.
 </p>
 <img src="../../media/staticlink.png" class="step1"><br><br>
 <p>
