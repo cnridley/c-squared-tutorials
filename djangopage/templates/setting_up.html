@@ -21,7 +21,7 @@
 </p>
 <hr>
 <p> <u>Step 1</u> <br>
-    In the terminal use 'pip3 install django' - the 3 is used, so that it is installed for python version 3.<br>
+    In the terminal use 'pip3 install django' - the 3 is used so that it is installed for python version 3.<br>
     If you ever need to check what version of python you are using use 'python --version' in the terminal. 
 </p>
 <img src="../../media/step-1.png" class="Step1">
@@ -74,5 +74,46 @@ Having a superuser allows backend access to CRUD functionality - which is helpfu
 </p>
 <img src="../../media/step-6.png" class="Step1">
 <br>
+<hr>
+<p style="text-decoration: underline; text-transform: uppercase; color: #f4816f;">Setting up the base template</p>
+<p>
+    Django allows us to build a base template 'base.html' which all other templates can inherit from.<br>
+    This contains all the information that goes into the head tag, such as link tags, script tags and meta data, meaning
+    you don't have to include it on every page. <br><br>
+    Django provides a templating system that allows us to create HTML files in a template directory within each app.
+    Django blocks used in the base.html will be inherited by any templates that extends from it.<br>
+    To extend from the base.html the top of the page must include the following:
+</p>
+    <img src="../../media/base.png" class="Step1">
 <br>
+<hr>
+<p style="text-decoration: underline; text-transform: uppercase; color: #f7a74a;">Setting Up Static Files</p>
+<p>
+    Static files include CSS, JS and images. When using Django, you have to set you static files in a certain way. <br>
+    1. Make a static folder, within that folder make a css folder with a file named base.css <br>
+    2. In settings.py add the following to the bottom on the page, this tells Django where to look for static files 
+    that are not in a particular app.
+</p>
+<img src="../../media/static.png" class="step4"><br>
+<p>
+    3. Add the link tag to the CSS in the base.html. 
+</p>
+<img src="../../media/staticlink.png" class="step1"><br><br>
+<p>
+    4. At the top of every HTML page add the following so that it loads the static pages:
+</p>
+<img src="../../media/loadstatic.png" class="step1"><br>
+<hr>
+<p style="text-decoration: underline; text-transform: uppercase; color: #fbe55b;">Setting up Media files</p>
+<p>To set up media files:<br>
+    1. Make a media folder.<br>
+    2.Add the following to the settings.py file below the static files information:
+</p>
+<img src="../../media/media.png" class="step4"><br>
+<p>
+    3. In the project level urls.py file add the following:
+</p>
+<img src="../../media/mediaurl.png" class="step4"><br><br>
+
+<p>The Django project should now be set up. </p>
 {% endblock %}
